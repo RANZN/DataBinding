@@ -9,5 +9,6 @@ class TheViewModel : ViewModel() {
 
     fun getData() = liveData(Dispatchers.IO) {
         emit(Network.apiService.getData(1).data)
+
     }
 }
